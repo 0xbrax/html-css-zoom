@@ -36,10 +36,15 @@ header > nav {
 
 .btn-style1 {
     padding: 5px;
-    background-color: #4A4A4A;
+    background-color: rgba(255, 255, 255, 0.2);
     color: #FFF;
+    border: 0;
     border-radius: 5px;
     margin-right: 5px;
+}
+
+.btn-style1:hover {
+    background-color: rgba(255, 255, 255, 0.4);
 }
 
 main {
@@ -103,7 +108,6 @@ footer > nav {
     margin: auto;
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 
 .tool1-container {
@@ -112,10 +116,25 @@ footer > nav {
 
 .tool2-container {
     width: 60%;
+    text-align: center;
 }
 
 .tool3-container {
     width: 20%;
+    text-align: right;
+    padding: 0 15px;
+}
+
+.btn-style2 {
+    background-color: rgba(0, 0, 0, 0);
+    color: #FFF;
+    border: 0;
+    height: 90px;
+    padding: 0 5px;
+}
+
+.btn-style2:hover {
+    background-color: rgba(255, 255, 255, 0.4);
 }
 
 footer i {
@@ -127,4 +146,7 @@ footer p {
     margin-top: 5px;
 }
 
+.color1 {
+    color: #FF0000;
+}
 
