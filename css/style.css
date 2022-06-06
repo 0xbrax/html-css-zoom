@@ -7,3 +7,52 @@
 body {
     font-family: sans-serif;
 }
+
+header {
+    background-color: #000;
+    height: 70px;
+}
+
+header > nav {
+    max-width: 1200px;
+    margin: auto;
+    color: #FFF;
+}
+
+.topbar-container {
+    text-align: right;
+}
+
+.topbar-container > div {
+    float: right;
+}
+
+main {
+    background-color: #000;
+}
+
+main > section {
+    max-width: 1200px;
+    height: calc(100vh - 70px);
+    margin: auto;
+    color: #FFF;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow-y: scroll;
+}
+
+.pax-img {
+    display: block;
+}
+
+.img-container {
+    position: relative;
+}
+
+.txt-container {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
