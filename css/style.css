@@ -8,19 +8,6 @@ body {
     font-family: Whitney, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-/*
-a:link {text-decoration: none;}
-a:visited {text-decoration: none;}
-a:active {text-decoration: none;}
-a:hover {text-decoration: none;}
-*/
-
-.clearfix::after {
-    content: '';
-    display: table;
-    clear: both;
-}
-
 header {
     background-color: #000;
     height: 70px;
@@ -59,13 +46,18 @@ main {
 
 main > section {
     max-width: 1200px;
+    width: 100%;
     height: calc(100vh - (70px + 90px));
     margin: auto;
     color: #FFF;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    overflow-y: scroll;
+    overflow-y: hidden;
+}
+
+main > section:hover {
+    overflow-y: overlay;
 }
 
 main > section::-webkit-scrollbar {
@@ -84,7 +76,7 @@ main > section::-webkit-scrollbar-thumb {
 }
 
 .pax-container {
-    margin: 5px 10px;
+    margin: 5px 15px;
 }
 
 .pax-img {
@@ -123,15 +115,20 @@ footer > nav {
 
 .tool2-container {
     width: 60%;
-    text-align: center;
     display: flex;
+    justify-content: center;
 }
 
 .tool3-container {
     width: 20%;
-    text-align: right;
     padding: 0 15px;
     display: flex;
+    justify-content: flex-end;
+}
+
+.btn-container {
+    display: flex;
+    align-items: center;
 }
 
 .btn-style2 {
@@ -146,21 +143,20 @@ footer > nav {
     background-color: rgba(255, 255, 255, 0.4);
 }
 
-.btn-container {
-    float: left;
+.btn-leftarrow {
+    margin-right: 5px;
 }
 
 .arrowup {
-    float: left;
-    line-height: calc(90px / 2);
+    padding: 0 5px;
 }
 
 .arrowup i {
-    margin-left: 10px;
+    line-height: 90px;
     font-size: 16px;
 }
 
-.btn-style3:hover {
+.arrowup:hover {
     background-color: rgba(255, 255, 255, 0.6);
 }
 
